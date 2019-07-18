@@ -9,6 +9,8 @@ class Spaceship {
         this.warpDrive = warpDrive
         this.docked = this.crew.length > 0 ? false : true
         this.phasersCharge = phasersCharge
+
+        this.crew.forEach(crewMember => crewMember.currentShip = this)
     }
 
 
